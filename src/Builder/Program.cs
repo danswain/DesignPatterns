@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Builder
 {
@@ -9,6 +6,17 @@ namespace Builder
     {
         static void Main(string[] args)
         {
+            var carManufacturer = new CarManufacturer();
+
+            var fordFiestaBuilder = new BlueFordFiestaBuilder();
+            carManufacturer.Build(fordFiestaBuilder);
+            Console.WriteLine(fordFiestaBuilder.Car);
+
+            var fordFocusBuilder = new RedFordFocusBuilder();
+            carManufacturer.Build(fordFocusBuilder);
+            Console.WriteLine(fordFocusBuilder.Car);
+
+            Console.ReadLine();
         }
     }
 }
