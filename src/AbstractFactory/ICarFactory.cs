@@ -2,6 +2,8 @@
 {
     public interface ICarFactory
     {
-        ICar Create();
+        ICar CreateHatchback();
+        ICar CreateEstate();
+        ICar CreateConvertible();
     }
 }

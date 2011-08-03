@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FordCar.cs" />
-    <Compile Include="FordCarFactory.cs" />
+    <Compile Include="FordFiestaCarFactory.cs" />
     <Compile Include="ICar.cs" />
     <Compile Include="ICarFactory.cs" />
     <Compile Include="Program.cs" />
