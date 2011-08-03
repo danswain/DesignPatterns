@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "src\Abst
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "src\Builder\Builder.csproj", "{5AEDD5A2-04CA-46F4-BE55-9076026B1B06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "src\FactoryMethod\FactoryMethod.csproj", "{BDF7CB6F-2B1C-4551-82D4-CABABD15EB04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,6 +21,10 @@ Global
 		{5AEDD5A2-04CA-46F4-BE55-9076026B1B06}.Debug|x86.Build.0 = Debug|x86
 		{5AEDD5A2-04CA-46F4-BE55-9076026B1B06}.Release|x86.ActiveCfg = Release|x86
 		{5AEDD5A2-04CA-46F4-BE55-9076026B1B06}.Release|x86.Build.0 = Release|x86
+		{BDF7CB6F-2B1C-4551-82D4-CABABD15EB04}.Debug|x86.ActiveCfg = Debug|x86
+		{BDF7CB6F-2B1C-4551-82D4-CABABD15EB04}.Debug|x86.Build.0 = Debug|x86
+		{BDF7CB6F-2B1C-4551-82D4-CABABD15EB04}.Release|x86.ActiveCfg = Release|x86
+		{BDF7CB6F-2B1C-4551-82D4-CABABD15EB04}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
