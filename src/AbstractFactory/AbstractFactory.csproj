@@ -41,14 +41,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Car.cs" />
     <Compile Include="FordCar.cs" />
-    <Compile Include="FordFiestaCarFactory.cs" />
+    <Compile Include="FordFiesta.cs" />
+    <Compile Include="FordFiestaFactory.cs" />
+    <Compile Include="FordFiestaConvertible.cs" />
+    <Compile Include="FordFiestaEstate.cs" />
+    <Compile Include="FordFiestaHatchback.cs" />
+    <Compile Include="FordFocus.cs" />
+    <Compile Include="FordFocusConvertible.cs" />
+    <Compile Include="FordFocusEstate.cs" />
+    <Compile Include="FordFocusFactory.cs" />
+    <Compile Include="FordFocusHatchback.cs" />
     <Compile Include="ICar.cs" />
     <Compile Include="ICarFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VauxhallCar.cs" />
-    <Compile Include="VauxhallCarFactory.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

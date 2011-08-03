@@ -6,14 +6,20 @@ namespace AbstractFactory
     {
         public Program(ICarFactory factory)
         {
-            ICar myNewCar = factory.Create();
-            myNewCar.Drive();
+            ICar hatchback = factory.CreateHatchback();
+            hatchback.Drive();
+
+            ICar estate = factory.CreateEstate();
+            estate.Drive();
+
+            ICar convertible = factory.CreateConvertible();
+            convertible.Drive();
+            Console.WriteLine("---------------------");
         }
         static void Main(string[] args)
         {
-            new Program(new FordCarFactory()); //Prints Driving Ford Focus
-            new Program(new VauxhallCarFactory()); //Prints Driving Vauxhall Astra
-
+            new Program(new FordFiestaFactory()); //Prints Driving Ford Fiesta            
+            new Program(new FordFocusFactory()); //Prints Driving Ford Focus            
             Console.ReadLine();
         }
     }

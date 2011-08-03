@@ -4,6 +4,7 @@ namespace AbstractFactory
     {
         string Make { get;  }
         string Model { get;  }
+        string BodyType { get; }
         void Drive();
     }
 }
