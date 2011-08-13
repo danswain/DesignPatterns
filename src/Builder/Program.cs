@@ -6,15 +6,20 @@ namespace Builder
     {
         static void Main(string[] args)
         {
-            var carManufacturer = new CarManufacturer();
 
-            var fordFiestaBuilder = new BlueFordFiestaBuilder();
-            carManufacturer.Build(fordFiestaBuilder);
-            Console.WriteLine(fordFiestaBuilder.Car);
+            var fordFiesta = new FordFiestaBuilder()
+                .AddAlarm(true)
+                .AddDoors(5)
+                .AddSatNav(true)
+                .AddEngine("2.8")
+                .CarBody("Convertible")
+                .PaintColor("Red")
+                .AddSatNav(true)
+                .AddSunroof(true)
+                .Mp3Player(true)
+                .Build();
 
-            var fordFocusBuilder = new RedFordFocusBuilder();
-            carManufacturer.Build(fordFocusBuilder);
-            Console.WriteLine(fordFocusBuilder.Car);
+            Console.WriteLine(fordFiesta);
 
             Console.ReadLine();
         }
